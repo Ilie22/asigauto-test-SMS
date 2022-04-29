@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>AsigautoV2</title>
+ </head>
+    <body>
+         <!-- Start of the header -->
+         <header>
+            <div class="inner">
+                <div class="logo">
+                    <div>
+                       <img src="img/2v.png"  AsigAuto> <i class="TextLogo" > AsigAuto</a> 
+                     </div>
+                </div>
+    
+                <nav>
+                    <li><span><a href="index.html">Rca</a></span></li>
+                    <li><span><a href="pages/casco.html">Casco</a></span></li>
+                    <li><span><a href="pages/informatii.html">Informatii</a></span></li>
+                    <li><span><a href="pages/contact.html" class="button">Contact</a></span></li>
+                </nav>
+              </div>
+         </header>
+         <div>
+          <aside>
+            <h1>Informatii RCA</h1>
+  
+            <button class="accordion">Ce prezinta</button>
+             <div class="accordion-content">
+              Asigurarea RCA este asigurarea de răspundere civilă auto a deţinătorilor de autovehicule şi este o asigurare obligatorie pentru toţi posesorii de autovehicule din Republica Moldova.
+
+              Obiect a asigurării obligatorii de răspundere civilă auto (RCA) îl constituie răspunderea civilă a posesorului de autovehicul pentru orice pagubă sau vătămare coprorală produsă prin accident care au loc pe teritoriul Republicii Moldova.
+           </div>
+            <button class="accordion">Ce riscuri</button>
+            <div class="accordion-content">
+             <p>
+              Acest tip de asigurare acoperă orice daune provocate terţelor persoane în urma unor accidente de circulaţie (daune materiale sau vătămări corporale).
+             </p>
+            </div>
+            <button class="accordion">Acte necesare</button>
+            <div class="accordion-content">
+             <p>
+                certificatul de înmatriculare al autovehiculului (paşaportul tehnic);
+                permisul de conducere;
+                după caz, alte acte ce atestă dreptul de posesiune asupra autovehiculului (procură, contract de locaţiune, contract de leasing, etc.).
+             </p>
+            </div>
+            
+          </aside>
+          </div>
+         <div>
+         <main>
+          <div class="page-container">
+             <form action="#" name="formPrice" class="form">
+                <!-- Progress bar -->
+                <div class="progressbar">
+                  <div class="progress" id="progress"></div>
+                  <div
+                    class="progress-step progress-step-active"
+                    data-title="Baza"
+                  ></div>
+                  <div class="progress-step" data-title="Aditionale"></div>
+                  <div class="progress-step" data-title="Asiguratului"></div>
+                  <div class="progress-step" data-title="Confirmare"></div>
+                </div>
+                <h2 class="text-center">Asigurare Rca</h2>
+          
+                <!-- Steps -->
+                <div class="form-step form-step-active">
+
+                <label>Statutul asiguratului</label>
+                <div class="input-group1">
+                     
+                  <label class="container">Persoana fizica
+                    <input type="radio" checked="checked" name="radio5">
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="input-group3">
+                  <label class="container">Persoana juridica
+                    <input type="radio"  name="radio5">
+                    <span class="checkmark"></span>
+                  </label>
+                 </div>
+                  </div>
+            <label>Vehiculul înregistrat</label>
+            <div class="input-group1">
+             <label class="container">In R.Moldova
+              <input type="radio" checked="checked" name="radio4">
+               <span class="checkmark"></span>
+              </label>
+              <div class="input-group3">
+              <label class="container">In Strainatate
+              <input type="radio"  name="radio4">
+                <span class="checkmark"></span>
+            </label>
+            </div>
+             </div>
+    <label>Tipul de transport</label>
+    <div class="input-group1">
+       <div  class="select">
+       <select class="tipcar" name="formatPriceTipCar" id="tipPrice" onchange="getddl()">
+        <option  selected disabled>Alege tipul transportului</option>
+        <option  value="146" >Autoturism</option>
+        <option  value="100" >Autobus</option>
+        <option  value="80" >Camion</option>
+        <option  value="250" >Motocicleta</option>
+        </select>
+       </div>                  
+    <div class="input-group2">
+      <div class="select">
+        <select calss="enginecar"  name="formatPricePowerCar" id="enginePrice" onchange="getddl()">
+         <option selected disabled>Datele transportului </option>
+         <option  value="1200" >până la 1200 cm3</option>
+         <option  value="1300" >între 1201 și 1600 cm3</option>
+         <option  value="1400" >între 1601 și 2000 cm3</option>
+         <option  value="1500" >între 2001 și 2400 cm3</option>
+         <option  value=" 1600" >între 2401 și 3000 cm3</option>
+         </select>
+        </div>
+    </div>
+  </div>
+              <label>Numarul de persoane admise sa conduca vehicolul asigurat</label>
+              <div class="input-group1">
+                      <label class="container">Nelimitat
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <div class="input-group3">
+                      <label class="container">Limitat
+                        <input type="radio"  name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                
+              </div>
+                  <div class="">
+                    <a   href="#" class="btn btn-next width-50 ml-auto">Next</a>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <label>Ai avut asigurare auto anii precedenti?</label>
+                  <div class="input-group1-stage2">
+                       
+                    <label class="container">Da
+                      <input type="radio" checked="checked" name="radio2">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="input-group3">
+                    <label class="container">Nu
+                      <input type="radio"  name="radio2">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+            </div>
+            <label>Alege compania de asigurare</label>
+            <div class="input-group-2stage-select">
+             <div class="select">
+               <select name="format" id="format">
+               <option selected disabled>Alege compania</option>
+                 <option value="pdf">Moldcargo</option>
+                <option value="txt">Donaris</option>
+                 <option value="epub">Moldasig</option>
+                <option value="fb2">Asterra</option>
+                <option value="mobi">Grawe</option>
+               </select>
+                </div>
+              </div>
+              <label>Selecteaza tipul certificatului de inmatruculare a autovehicolului</label>
+            <div class="input-group3-1">
+              <label class="container">Certificat de tip nou
+                <input type="radio" checked="checked" name="radio3">
+                <span class="checkmark"></span>
+              </label>
+              <div class="input-group3-2">
+              <label class="container">Certificat de tip vechi
+                <input type="radio"  name="radio3">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="input-group3-3">
+              <label class="container">Certificat provizoriu
+                <input type="radio"  name="radio3">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+           </div>
+  
+                  <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <label>Date aditionale</label>
+                  <section class="background-input-stage-3">             
+                  <div class="row">
+                    <div class="input-group-stage3 input-3">
+                       <input  type="tel" name="number" id="number" placeholder="Enter Phone Number..." class="input-control1">
+                    </div>
+                    <div class="input-group-stage4 input-3">
+                       <input type="text" name="msg" id="msg" placeholder="Enter Text Message..." class="input-control1">
+                    </div>
+                    </div>
+                  </section>     
+                    
+           <label>Numarul certificatului de inmatriculare al vehicolului</label>
+           <section class="background-input-stage-3">             
+            <div class="row">
+              <div class="input-group-stage3-1 input-3">
+                 <input type="text" placeholder="Ex. 123456789" class="input-control1">
+              </div>
+              </div>
+            </section> 
+             <label>Numarul de inregistrare a vehicolului</label>
+             <section class="background-input-stage-3">             
+              <div class="row">
+                <div class="input-group-stage3-1 input-3">
+                   <input type="text" placeholder="Ex. WMY123" class="input-control1">
+                </div>
+                </div>
+              </section> 
+                  <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <div class="input-group">
+                    <label>Metoda de plata</label>
+                    <div class="input-group1">
+                      <label class="container">Numerar   la livrare
+                        <input type="radio" checked="checked" name="radio6">
+                        <span class="checkmark"></span>
+                      </label>
+                      <div class="input-group3">
+                      <label class="container">Card bancar   la livrare
+                        <input type="radio"  name="radio6">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+              </div>
+                  </div>
+                  <div>
+                    <div class="check-s">
+                    <label class="container">Sunt de acord cu cerintele acestui site                   
+                      <input type="checkbox">
+                      <span class="checkmark"></span>                                  
+                     </label>
+                    </div>
+                  </div>
+                  
+                  <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <input onclick="endSucces()" value="Send Text" id="button" class="button button-primary"  type="submit" value="Submit" name="endSubmit" class="btn"  />
+                    
+                         <p class="response"></p>
+                    
+                  </div>
+                </div>
+              </form>
+            </div>
+          
+         </main>
+        </div>
+
+        <!-- Afisarea pretului -->
+        <div class="container-pret">
+          <div>
+           <h3> Perioada       12 luni</h3>
+          </div>
+          <div>
+            <h3> Livrarea    gratis </h3>
+          </div>
+          <div>
+            <h3> Pretul <div id="price">.....</div>  </h3> 
+            
+        </div>
+        
+            <script>
+              function getddl (){
+                 document.getElementById('price').innerHTML=
+                 (formPrice.formatPricePowerCar[formPrice.formatPricePowerCar.selectedIndex].value) -
+                 (formPrice.formatPriceTipCar[formPrice.formatPriceTipCar.selectedIndex].value) ;          
+              }
+            </script>
+            
+
+        
+        </div>
+        <!-- Afisarea pretului -->
+
+
+
+        <script src="/socket.io/socket.io.js"></script>
+     <script src="js/script.js"></script>
+
+     
+           
+     </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>AsigautoV2</title>
+</head>
+<body>
+     <!-- Start of the header -->
+     <header>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                   <img src="../img/2v.png"  AsigAuto> <i class="TextLogo" > AsigAuto</a> 
+                 </div>
+            </div>
+
+            <nav>
+                <li><span><a href="../index.html">Rca</a></span></li>
+                <li><span><a href="pages/casco.html">Casco</a></span></li>
+                <li><span><a href="../pages/informatii.html">Informatii</a></span></li>
+                <li><span><a href="../pages/contact.html" class="button">Contact</a></span></li>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <aside>
+          <h1>Informatii CASCO</h1>
+
+          <button class="accordion">Ce prezinta</button>
+           <div class="accordion-content">
+            Polița de asigurare CASCO este o asigurare facultativă care se încheie pentru autovehiculele ce au fost supuse înmatriculării și acoperă pagubele produse autovehiculului în urma unor avarii accidentale, fenomene naturale, vandalism, conform condițiilor de asigurare agreate la momentul emiterii poliței de asigurare.
+         </div>
+          <button class="accordion">Suma asigurata</button>
+          <div class="accordion-content">
+           <p>
+            Suma asigurata reprezintă valoarea reală (valoarea de piață) a mașinii în momentul încheierii poliței de asigurare CASCO. Pentru autovehiculele noi suma asigurată o reprezintă prețul de achiziție. Pentru autovehiculele second hand, suma asigurată se stabilește aplicând la valoarea de nou (valoare de catalog / factura achiziție de nou) grila de uzură a asiguratorului, în funcție de vechimea vehiculului la momentul preluării în asigurare.
+           </p>
+          </div>
+          <button class="accordion">Tariful de asigurare</button>
+          <div class="accordion-content">
+           <p>
+            Cota de asigurare este procentul aplicat la suma asigurată pentru a rezulta prima anuală de asigurare. Cota de asigurare se stabilește în funcție de mai multe criterii de calcul dintre care: valoarea mașinii, anul producerii, proprietarul mașinii (de ex. vârsta pentru persoanele fizice sau obiectul de activitate pentru persoanele juridice), marca autovehiculului, teritoriul de acoperire, etc.
+
+            Criteriile de calcul a cotei de asigurare sunt stabilite de către fiecare asigurător în parte în funcție de normele actuariale interne ale fiecăruia.
+           </p>
+          </div>
+
+        </aside>
+
+      </div>
+       
+       <main>
+        <div class="page-container">
+          <form action="#" name="formPrice" class="form">
+             <!-- Progress bar -->
+             <div class="progressbar">
+               <div class="progress" id="progress"></div>
+               <div
+                 class="progress-step progress-step-active"
+                 data-title="Baza"
+               ></div>
+               <div class="progress-step" data-title="Aditionale"></div>
+               <div class="progress-step" data-title="Asiguratului"></div>
+               <div class="progress-step" data-title="Confirmare"></div>
+             </div>
+             <h2 class="text-center">Asigurare CASCO</h2>
+       
+             <!-- Steps -->
+             <div class="form-step form-step-active">
+
+              <label>Tipul vehicolului</label>
+              <div class="input-group-2stage-select">
+               <div class="select">
+                 <select name="format12345" id="format" onchange="getddl2()">
+                 <option selected disabled>Alege </option>
+                   <option value="4000 MLD">Autoturism</option>
+                  <option value="4500 MDL">Camion pana la 3500Kg</option>
+                   <option value="5000 MDL">Camion peste 3500Kg</option>
+                  <option value="4200 MDL">Autobuz pana la 20 pasageri</option>
+                  <option value="4800 MDL">Autobuz peste 20 pasageri</option>
+                 </select>
+                  </div>
+                </div>
+                <label>Datele autovehicolului</label>
+                <section class="background-input-stage-3">             
+                <div class="row">
+                  <div class="input-group-stage3 input-3">
+                     <input type="text" placeholder="Marca Ex.Audi" class="input-control1">
+                  </div>
+                  <div class="input-group-stage4 input-3">
+                     <input type="text" placeholder="Modelul Ex.A4 " class="input-control1">
+                  </div>
+                  </div>
+                </section>  
+
+
+
+               <div class="">
+                 <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+               </div>
+             </div>
+             <div class="form-step">
+         <label>Anul de fabricatie a vehicolului</label>
+         <div class="input-group-2stage-select">
+          <div class="select">
+            <select name="format" id="format">
+              <option value="2022">2022</option>
+             <option value="2021">2021</option>
+              <option value="2020">2020</option>
+             <option value="2019">2019</option>
+             <option value="2018">2018</option>
+             <option value="2017">2017</option>
+             <option value="2016">2016</option>
+            </select>
+             </div>
+           </div>
+           <label>Valoarea de piata</label>
+           <div class="input-group1">
+            <section class="background-input-stage-3">             
+              <div class="row">
+                <div class="input-group-stage3-1 input-3">
+                   <input type="text" placeholder="valoare" class="input-control1">
+                </div>
+                </div>
+              </section>                 
+           <div class="input-group2">
+             <div class="select">
+               <select name="format" id="format">
+                <option value="mdl"  >MDL</option>
+                <option value="eur"  >EUR</option>
+                </select>
+               </div>
+           </div>
+         </div>
+
+               <div class="btns-group">
+                 <a href="#" class="btn btn-prev">Previous</a>
+                 <a href="#" class="btn btn-next">Next</a>
+               </div>
+             </div>
+             <div class="form-step">
+               <label>Date aditionale</label>
+               <section class="background-input-stage-3">             
+               <div class="row">
+                 <div class="input-group-stage3 input-3">
+                    <input type="text" placeholder="Nume" class="input-control1">
+                 </div>
+                 <div class="input-group-stage4 input-3">
+                    <input type="text" placeholder="Prenume" class="input-control1">
+                 </div>
+                 </div>
+               </section>     
+                 
+        <label>Numarul certificatului de inmatriculare al vehicolului</label>
+        <section class="background-input-stage-3">             
+         <div class="row">
+           <div class="input-group-stage3-1 input-3">
+              <input type="text" placeholder="Ex. 123456789" class="input-control1">
+           </div>
+           </div>
+         </section> 
+          <label>Numarul de inregistrare a vehicolului</label>
+          <section class="background-input-stage-3">             
+           <div class="row">
+             <div class="input-group-stage3-1 input-3">
+                <input type="text" placeholder="Ex. WMY123" class="input-control1">
+             </div>
+             </div>
+           </section> 
+               <div class="btns-group">
+                 <a href="#" class="btn btn-prev">Previous</a>
+                 <a href="#" class="btn btn-next">Next</a>
+               </div>
+             </div>
+             <div class="form-step">
+               <div class="input-group">
+                 <label>Metoda de plata</label>
+                 <div class="input-group1">
+                   <label class="container">Numerar   la livrare
+                     <input type="radio" checked="checked" name="radio6">
+                     <span class="checkmark"></span>
+                   </label>
+                   <div class="input-group3">
+                   <label class="container">Card bancar   la livrare
+                     <input type="radio"  name="radio6">
+                     <span class="checkmark"></span>
+                   </label>
+                 </div>
+                 </div>
+               </div>
+               <div>
+                <div class="check-s">
+                <label class="container">Sunt de acord cu cerintele acestui site                   
+                  <input type="checkbox">
+                  <span class="checkmark"></span>                                  
+                 </label>
+                </div>
+              </div>
+               <div class="btns-group">
+                 <a href="#" class="btn btn-prev">Previous</a>
+                 <input onclick="endSucces()" type="submit" value="Submit" class="btn" />
+               </div>
+             </div>
+           </form>
+         </div>
+         
+       
+      </main>
+     
+
+     <!-- Afisarea pretului -->
+     <div class="container-pret">
+       <div>
+        <h3> Perioada       12 luni</h3>
+       </div>
+       <div>
+         <h3> Livrarea    gratis </h3>
+       </div>
+       <div>
+        <h3> Pretul <div   id="price2">.....</div>  </h3> 
+     </div>
+     </div>
+     <!-- Afisarea pretului -->
+     <script>
+      function getddl2 (){
+         document.getElementById('price2').innerHTML=
+         (formPrice.format12345[formPrice.format12345.selectedIndex].value) 
+      }
+    </script>
+
+
+
+  
+
+
+  
+   <script src="../js/script.js"></script>
+         
+   </body>
+</html>
